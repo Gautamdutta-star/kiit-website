@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses Offered | KIIT University</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:"Segoe UI", Arial, sans-serif;
+    }
+
+    body{
+      background:#f3fff7;
+      color:#1d2430;
+      padding: 25px 0 60px 0;
+    }
+
+    .wrapper{
+      width:92%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    /* Header */
+    .header{
+      background: linear-gradient(135deg,#0b7a36,#16c35a);
+      color:white;
+      padding: 28px 22px;
+      border-radius: 18px;
+      box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+      border: 1px solid rgba(0,0,0,0.10);
+    }
+
+    .header h1{
+      text-align:center;
+      font-size:32px;
+      font-weight:900;
+      margin-bottom:10px;
+    }
+
+    .header p{
+      text-align:center;
+      font-size:15px;
+      opacity:0.95;
+      max-width: 950px;
+      margin:auto;
+      line-height:1.6;
+    }
+
+    /* Grid */
+    .grid{
+      margin-top: 22px;
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .card{
+      background:white;
+      border-radius: 18px;
+      overflow:hidden;
+      border:1px solid rgba(0,0,0,0.10);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+      transition:0.25s ease;
+    }
+
+    .card:hover{
+      transform: translateY(-4px);
+      box-shadow: 0 16px 35px rgba(0,0,0,0.13);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .card-body{
+      padding: 18px;
+    }
+
+    .card-body h2{
+      color:#0b7a36;
+      font-size:18px;
+      font-weight:900;
+      margin-bottom:10px;
+      border-left: 5px solid #16c35a;
+      padding-left: 10px;
+    }
+
+    .card-body ul{
+      margin-left: 18px;
+      margin-top: 8px;
+    }
+
+    .card-body li{
+      margin: 7px 0;
+      font-size:15px;
+      color:#1d2430;
+      line-height:1.4;
+    }
+
+    /* Contact Section */
+    .contact{
+      margin-top: 22px;
+      background:white;
+      border-radius:18px;
+      padding: 20px;
+      border:1px solid rgba(0,0,0,0.10);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+    }
+
+    .contact h2{
+      color:#0b7a36;
+      font-size:18px;
+      font-weight:900;
+      margin-bottom:10px;
+      border-left: 5px solid #16c35a;
+      padding-left: 10px;
+    }
+
+    .contact-box{
+      margin-top: 10px;
+      background:#eafff0;
+      border:1px solid rgba(11,122,54,0.22);
+      padding: 14px;
+      border-radius: 14px;
+      font-size:15px;
+      line-height:1.6;
+    }
+
+    .contact-box a{
+      color:#0b7a36;
+      font-weight:900;
+      text-decoration:none;
+    }
+
+    .contact-box a:hover{
+      text-decoration:underline;
+    }
+
+    /* Footer */
+    .footer{
+      margin-top: 25px;
+      text-align:center;
+      color:white;
+      background:#0b7a36;
+      padding: 14px;
+      font-weight:700;
+      border-radius:14px;
+    }
+
+    /* Responsive */
+    @media(max-width:900px){
+      .grid{
+        grid-template-columns: 1fr;
+      }
+      .card img{
+        height:200px;
+      }
+      .header h1{
+        font-size:26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Courses Offered at KIIT University</h1>
+      <p>
+        KIIT University offers a wide range of professional and academic programs across multiple disciplines.
+        All courses are designed with a focus on research, innovation, industry relevance, and practical learning.
+      </p>
+    </div>
+
+    <!-- Courses Grid -->
+    <div class="grid">
+
+      <!-- Engineering -->
+      <div class="card">
+        <img src="schoolofengineering.jpg" alt="School of Engineering">
+        <div class="card-body">
+          <h2>School of Engineering</h2>
+          <ul>
+            <li>B.Tech in Computer Science</li>
+            <li>B.Tech in Mechanical Engineering</li>
+            <li>B.Tech in Electronics & Communication</li>
+            <li>B.Tech in Electrical Engineering</li>
+            <li>B.Tech in Civil Engineering</li>
+            <li>M.Tech in Multiple Specializations</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Management -->
+      <div class="card">
+        <img src="schoolofmanagement.jpg" alt="School of Management">
+        <div class="card-body">
+          <h2>School of Management</h2>
+          <ul>
+            <li>BBA</li>
+            <li>MBA (Marketing, Finance, HR, Operations)</li>
+            <li>Executive MBA</li>
+            <li>Ph.D. in Management</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Law -->
+      <div class="card">
+        <img src="kiitschooloflaw.jpg" alt="School of Law">
+        <div class="card-body">
+          <h2>School of Law (KLS)</h2>
+          <ul>
+            <li>BA LLB</li>
+            <li>BBA LLB</li>
+            <li>BSc LLB</li>
+            <li>LLM</li>
+            <li>Ph.D. in Law</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Biotechnology -->
+      <div class="card">
+        <img src="kiitschoolofbiotech.jpg" alt="School of Biotechnology">
+        <div class="card-body">
+          <h2>School of Biotechnology</h2>
+          <ul>
+            <li>B.Tech in Biotechnology</li>
+            <li>M.Sc. Biotechnology</li>
+            <li>M.Tech Biotechnology</li>
+            <li>Ph.D. in Biotechnology</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Medical -->
+      <div class="card">
+        <img src="schoolofmedical.jpg" alt="School of Medical Sciences">
+        <div class="card-body">
+          <h2>School of Medical Sciences</h2>
+          <ul>
+            <li>MBBS</li>
+            <li>BDS</li>
+            <li>MD / MS Specializations</li>
+            <li>Nursing Programs</li>
+            <li>Allied Health Sciences</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Film / Media -->
+      <div class="card">
+        <img src="kiitschooloffashion.jpg" alt="School of Film, Media & Design">
+        <div class="card-body">
+          <h2>School of Film, Media & Design</h2>
+          <ul>
+            <li>B.Design</li>
+            <li>B.A. (Film & Media Studies)</li>
+            <li>M.A. (Film & Media)</li>
+            <li>Ph.D. in Film & Media</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Contact -->
+    <div class="contact">
+      <h2>Contact for Course Details</h2>
+      <div class="contact-box">
+        <b>Website:</b> <a href="https://kiit.ac.in" target="_blank">https://kiit.ac.in</a><br>
+        <b>Phone:</b> +91 674 272 5113
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      © 2026 | KIIT Deemed To Be University | Courses & Programs
+    </div>
+
+  </div>
+
+</body>
+</html>

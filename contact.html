@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | KIIT University</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:"Segoe UI", Arial, sans-serif;
+    }
+
+    body{
+      background:#f3fff7;
+      color:#1d2430;
+      padding: 25px 0 60px 0;
+    }
+
+    .wrapper{
+      width:92%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    /* Header */
+    .header{
+      background: linear-gradient(135deg,#0b7a36,#16c35a);
+      color:white;
+      padding: 28px 22px;
+      border-radius: 18px;
+      box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+      border: 1px solid rgba(0,0,0,0.10);
+      text-align:center;
+    }
+
+    .header h1{
+      font-size:32px;
+      font-weight:900;
+      margin-bottom:10px;
+    }
+
+    .header p{
+      font-size:15px;
+      opacity:0.95;
+      max-width: 950px;
+      margin:auto;
+      line-height:1.6;
+    }
+
+    /* Layout Grid */
+    .grid{
+      margin-top: 22px;
+      display:grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 18px;
+    }
+
+    .card{
+      background:white;
+      border-radius: 18px;
+      overflow:hidden;
+      border:1px solid rgba(0,0,0,0.10);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+      transition:0.25s ease;
+    }
+
+    .card:hover{
+      transform: translateY(-3px);
+      box-shadow: 0 16px 35px rgba(0,0,0,0.13);
+    }
+
+    .card-body{
+      padding: 18px;
+    }
+
+    .card h2{
+      color:#0b7a36;
+      font-size:18px;
+      font-weight:900;
+      margin-bottom:10px;
+      border-left: 5px solid #16c35a;
+      padding-left: 10px;
+    }
+
+    .card p{
+      font-size:15px;
+      line-height:1.6;
+      color:#273142;
+    }
+
+    ul{
+      margin-left: 18px;
+      margin-top: 10px;
+    }
+
+    li{
+      margin: 7px 0;
+      font-size:15px;
+      line-height:1.5;
+    }
+
+    /* Location Image */
+    .location-img{
+      width:100%;
+      height:240px;
+      object-fit:cover;
+      display:block;
+    }
+
+    /* Info highlight box */
+    .info-box{
+      margin-top: 10px;
+      background:#eafff0;
+      border:1px solid rgba(11,122,54,0.22);
+      padding: 14px;
+      border-radius: 14px;
+      font-size:15px;
+      line-height:1.6;
+    }
+
+    .info-box b{
+      color:#0b7a36;
+    }
+
+    .info-box a{
+      color:#0b7a36;
+      font-weight:900;
+      text-decoration:none;
+    }
+
+    .info-box a:hover{
+      text-decoration: underline;
+    }
+
+    /* Map */
+    .map-card iframe{
+      width:100%;
+      height:350px;
+      border:0;
+      border-radius: 16px;
+    }
+
+    /* Social badges */
+    .social{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top: 12px;
+    }
+
+    .social span{
+      background:#eafff0;
+      color:#0b7a36;
+      border:1px solid rgba(11,122,54,0.22);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight:800;
+      font-size:13px;
+    }
+
+    /* Footer */
+    .footer{
+      margin-top: 25px;
+      text-align:center;
+      color:white;
+      background:#0b7a36;
+      padding: 14px;
+      font-weight:700;
+      border-radius:14px;
+    }
+
+    /* Responsive */
+    @media(max-width:900px){
+      .grid{
+        grid-template-columns: 1fr;
+      }
+      .header h1{
+        font-size:26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Contact KIIT University</h1>
+      <p>
+        KIIT University is always available to assist students, parents, and visitors.
+        You can reach out through phone, email, or by visiting the campus.
+      </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid">
+
+      <!-- Left: Location & Address -->
+      <div class="card">
+        <img class="location-img" src="kiitlocation.jpg" alt="KIIT Location">
+        <div class="card-body">
+          <h2>Campus Location</h2>
+          <div class="info-box">
+            <b>Address:</b><br>
+            KIIT University, Patia<br>
+            Bhubaneswar, Odisha – 751024<br>
+            India
+          </div>
+
+          <h2 style="margin-top:16px;">Official Website</h2>
+          <div class="info-box">
+            <b>Website:</b>
+            <a href="https://kiit.ac.in" target="_blank">https://kiit.ac.in</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Contact Info -->
+      <div class="card">
+        <div class="card-body">
+          <h2>Contact Numbers</h2>
+          <ul>
+            <li><b>Reception:</b> +91 674 272 5113</li>
+            <li><b>Admissions:</b> +91 674 274 2103</li>
+            <li><b>International Office:</b> +91 674 272 5649</li>
+          </ul>
+
+          <h2 style="margin-top:16px;">Email Support</h2>
+          <ul>
+            <li><b>General Queries:</b> info@kiit.ac.in</li>
+            <li><b>Admissions:</b> admissions@kiit.ac.in</li>
+            <li><b>International Students:</b> international@kiit.ac.in</li>
+          </ul>
+
+          <h2 style="margin-top:16px;">Social Media</h2>
+          <div class="social">
+            <span>Facebook: kiituniversity</span>
+            <span>Instagram: kiituniversity</span>
+            <span>Twitter/X: kiituniversity</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Map -->
+    <div class="card map-card" style="margin-top:18px;">
+      <div class="card-body">
+        <h2>Map Location</h2>
+        <p style="margin-bottom:12px;">
+          Find the KIIT University location on Google Maps:
+        </p>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.168521621733!2d85.82128987450441!3d20.355717810298463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19091f8f1ef1d3%3A0xf818f608103ff3d2!2sKIIT%20University!5e0!3m2!1sen!2sin!4v1702219870004"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      © 2026 | KIIT Deemed To Be University | Contact Page
+    </div>
+
+  </div>
+
+</body>
+</html>

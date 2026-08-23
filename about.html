@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About KIIT University</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:"Segoe UI", Arial, sans-serif;
+    }
+    body{
+      background:#f3fff7;
+      color:#1d2430;
+      padding: 25px 0 60px 0;
+    }
+    .wrapper{
+      width:92%;
+      max-width:1200px;
+      margin:auto;
+    }
+    .header{
+      background: linear-gradient(135deg,#0b7a36,#16c35a);
+      color:white;
+      padding: 30px 22px;
+      border-radius: 18px;
+      text-align:center;
+      box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+      border: 1px solid rgba(0,0,0,0.10);
+    }
+    .header h1{
+      font-size:34px;
+      font-weight:900;
+      margin-bottom:8px;
+      letter-spacing:0.4px;
+    }
+    .header p{
+      font-size:15px;
+      opacity:0.95;
+      max-width: 950px;
+      margin:auto;
+      line-height:1.6;
+    }
+    .grid{
+      margin-top: 22px;
+      display:grid;
+      grid-template-columns: 1.55fr 1fr;
+      gap: 18px;
+    }
+    .card{
+      background:white;
+      border-radius: 18px;
+      padding: 20px;
+      border: 1px solid rgba(0,0,0,0.10);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+      transition:0.25s ease;
+    }
+    .card:hover{
+      transform: translateY(-3px);
+      box-shadow: 0 16px 35px rgba(0,0,0,0.13);
+    }
+    .card h2{
+      color:#0b7a36;
+      font-size:18px;
+      font-weight:900;
+      margin-bottom:10px;
+      border-left:5px solid #16c35a;
+      padding-left:10px;
+    }
+    .card p{
+      font-size:15px;
+      color:#273142;
+      line-height:1.65;
+    }
+    ul{
+      margin-left:18px;
+      margin-top:10px;
+    }
+    li{
+      margin:7px 0;
+      font-size:15px;
+      line-height:1.5;
+      color:#1d2430;
+    }
+    .badge-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:12px;
+    }
+    .badge{
+      background:#eafff0;
+      color:#0b7a36;
+      border: 1px solid rgba(11,122,54,0.22);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight:800;
+      font-size:13px;
+    }
+    .img-card{
+      background:white;
+      border-radius:18px;
+      overflow:hidden;
+      border:1px solid rgba(0,0,0,0.10);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+    }
+    .img-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+    }
+    .img-caption{
+      padding: 12px 14px;
+      text-align:center;
+      font-weight:800;
+      color:#0b7a36;
+      background:#f7fff9;
+      border-top:1px solid rgba(0,0,0,0.06);
+    }
+    .stats{
+      margin-top: 18px;
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .stat-box{
+      background:white;
+      border-radius: 18px;
+      padding: 16px;
+      text-align:center;
+      border:1px solid rgba(0,0,0,0.10);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+    }
+    .stat-box h3{
+      color:#0b7a36;
+      font-size:22px;
+      font-weight:900;
+      margin-bottom:6px;
+    }
+    .stat-box p{
+      font-size:14px;
+      font-weight:800;
+      color:#273142;
+      opacity:0.85;
+    }
+    .contact{
+      margin-top: 18px;
+      background:white;
+      border-radius:18px;
+      padding: 20px;
+      border:1px solid rgba(0,0,0,0.10);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+    }
+    .contact h2{
+      color:#0b7a36;
+      font-size:18px;
+      font-weight:900;
+      margin-bottom:10px;
+      border-left:5px solid #16c35a;
+      padding-left:10px;
+    }
+    .contact-box{
+      background:#eafff0;
+      border:1px solid rgba(11,122,54,0.22);
+      border-radius: 14px;
+      padding: 14px;
+      line-height:1.7;
+      font-size:15px;
+    }
+    .contact-box a{
+      color:#0b7a36;
+      font-weight:900;
+      text-decoration:none;
+    }
+    .contact-box a:hover{
+      text-decoration:underline;
+    }
+    .footer{
+      margin-top: 22px;
+      text-align:center;
+      background:#0b7a36;
+      color:white;
+      padding: 14px;
+      border-radius: 14px;
+      font-weight:700;
+      font-size:14px;
+    }
+    @media(max-width:900px){
+      .grid{
+        grid-template-columns: 1fr;
+      }
+      .stats{
+        grid-template-columns: 1fr;
+      }
+      .header h1{
+        font-size:26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h1>About KIIT University</h1>
+      <p>One of India’s leading multidisciplinary universities known for academic excellence, research, innovation and global exposure.</p>
+    </div>
+    <div class="grid">
+
+      <!-- Left Column -->
+      <div class="card">
+        <h2>Introduction</h2>
+        <p>
+          KIIT (Kalinga Institute of Industrial Technology) is a premier university located in Bhubaneswar, Odisha.
+          It is renowned for its high-quality education across Engineering, Management, Law, Biotechnology,
+          Medical Sciences, Media & Design and many more disciplines.
+        </p>
+        <div class="badge-row">
+          <div class="badge">Academic Excellence</div>
+          <div class="badge">Research & Innovation</div>
+          <div class="badge">Global Exposure</div>
+          <div class="badge">Student-Centric Campus</div>
+        </div>
+        <br>
+        <h2>Vision & Mission</h2>
+        <ul>
+          <li>To nurture innovation and research.</li>
+          <li>To build a global learning community.</li>
+          <li>To promote holistic student development.</li>
+          <li>To serve society through knowledge.</li>
+        </ul>
+        <br>
+        <h2>Academics</h2>
+        <p>KIIT offers programs in:</p>
+        <ul>
+          <li>Engineering & Technology</li>
+          <li>Management & Commerce</li>
+          <li>Law</li>
+          <li>Biotechnology</li>
+          <li>Medical & Health Sciences</li>
+          <li>Design, Film & Media</li>
+        </ul>
+        <br>
+        <h2>Global Recognition</h2>
+        <ul>
+          <li>NAAC A++ Accreditation</li>
+          <li>International collaborations with 100+ universities</li>
+          <li>Recognized in major global ranking frameworks</li>
+        </ul>
+      </div>
+
+      <!-- Right Column Images -->
+      <div style="display:flex;flex-direction:column;gap:18px;">
+        <div class="img-card">
+          <img src="campusview.jpg" alt="KIIT Campus">
+          <div class="img-caption">KIIT Campus</div>
+        </div>
+        <div class="img-card">
+          <img src="centrallib.jpg" alt="Central Library">
+          <div class="img-caption">Central Library</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat-box">
+        <h3>1992</h3>
+        <p>Established</p>
+      </div>
+      <div class="stat-box">
+        <h3>30,000+</h3>
+        <p>Students</p>
+      </div>
+      <div class="stat-box">
+        <h3>60+ Countries</h3>
+        <p>Global Students</p>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact">
+      <h2>Contact Information</h2>
+      <div class="contact-box">
+        <b>Address:</b> Patia, Bhubaneswar, Odisha 751024<br>
+        <b>Phone:</b> +91 674 272 5113<br>
+        <b>Website:</b> <a href="https://kiit.ac.in" target="_blank">https://kiit.ac.in</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      © 2026 | KIIT Deemed To Be University — Patia, Bhubaneswar
+    </div>
+  </div>
+</body>
+</html>

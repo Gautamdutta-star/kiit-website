@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Panel</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#eaf7ff;
+      padding:30px;
+    }
+
+    .box{
+      max-width:600px;
+      margin:auto;
+      background:white;
+      padding:25px;
+      border-radius:10px;
+      border:1px solid #d9d9d9;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:20px;
+    }
+
+    .btn{
+      display:block;
+      width:100%;
+      padding:12px;
+      margin:10px 0;
+      border:none;
+      border-radius:6px;
+      cursor:pointer;
+      font-size:16px;
+      font-weight:bold;
+      text-align:center;
+    }
+
+    .add{ background:black; color:white; }
+    .edit{ background:#444; color:white; }
+    .delete{ background:crimson; color:white; }
+    .display{ background:#006400; color:white; }
+
+    .name-box{
+      margin-top:15px;
+      padding:12px;
+      border:1px solid #ccc;
+      border-radius:6px;
+      background:#f9f9f9;
+      text-align:center;
+      font-size:18px;
+      font-weight:bold;
+      color:#003366;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h2>Student Panel</h2>
+
+    <!-- Add Student button open stdinfo.html -->
+    <form action="stdinfo.php" method="get">
+      <button type="submit" class="btn add">Add Student</button>
+    </form>
+
+    <!-- Edit Student button (you can link to edit page later) -->
+    <form action="edit_student.php" method="get">
+      <button type="submit" class="btn edit">Edit Student</button>
+    </form>
+
+    <!-- Delete Student button (you can link to delete page later) -->
+    <form action="delete_student.php" method="get">
+      <button type="submit" class="btn delete">Delete Student</button>
+    </form>
+
+    <!-- Display Name -->
+    <form action="display_students.php" method="get">
+      <button type="submit" class="btn display">Display Name</button>
+    </form>
+</body>
+</html>
