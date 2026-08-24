@@ -4,9 +4,12 @@ $conn = new mysqli(
     getenv('MYSQLUSER'),
     getenv('MYSQLPASSWORD'),
     getenv('MYSQLDATABASE'),
-    (int) getenv("MYSQLPORT")
+    (int) getenv('MYSQLPORT')
 );
-if($conn->connect_error) die("DB Error: " . $conn->connect_error);
+
+if ($conn->connect_error) {
+    die("DB Error: " . $conn->connect_error);
+}
 
 $student = null;
 $msg = "";
