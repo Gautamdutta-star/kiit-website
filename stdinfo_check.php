@@ -1,9 +1,13 @@
 <?php
-$host = getenv('MYSQLHOST') ?: getenv('MySQL_MYSQLHOST');
-$user = getenv('MYSQLUSER') ?: getenv('MySQL_MYSQLUSER');
-$password = getenv('MYSQLPASSWORD') ?: getenv('MySQL_MYSQLPASSWORD');
-$database = getenv('MYSQLDATABASE') ?: getenv('MySQL_MYSQLDATABASE');
-$port = (int)(getenv('MYSQLPORT') ?: getenv('MySQL_MYSQLPORT'));
+$url = getenv('MYSQL_URL');
+
+$db = parse_url($url);
+
+$host = $db['host'];
+$user = urldecode($db['user']);
+$password = urldecode($db['pass']);
+$database = ltrim($db['path'], '/');
+$port = $db['port'] ?? 3306;
 
 $conn = new mysqli($host, $user, $password, $database, $port);
 
