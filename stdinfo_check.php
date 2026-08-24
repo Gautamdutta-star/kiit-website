@@ -5,7 +5,7 @@ $db = parse_url($url);
 
 $host = $db['host'];
 $user = 'root';
-$password = isset($db['pass']) ? urldecode($db['pass']) : '';
+$password = urldecode($db['pass']);
 $database = ltrim($db['path'], '/');
 $port = $db['port'] ?? 3306;
 
