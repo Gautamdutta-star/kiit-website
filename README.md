@@ -8,6 +8,8 @@ A web-based Student Information Management System developed using PHP and MySQL.
 
 ## 🚀 Features
 
+- 📝 Student Registration / Admission Form
+- ➕ Register and Add New Students
 - 🔐 Admin Login Authentication
 - ➕ Add New Student
 - 📋 View Student Details
