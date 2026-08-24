@@ -15,7 +15,7 @@ $student = null;
 /* ✅ Search by Rollno */
 if (isset($_POST['search'])) {
     $rollno = $_POST['rollno'];
-    $stmt = $conn->prepare("SELECT * FROM student_info WHERE roll_no=?");
+    $stmt = $conn->prepare("SELECT * FROM student_info WHERE Rollno=?");
     $stmt->bind_param("s", $rollno);
     $stmt->execute();
     $res = $stmt->get_result();
