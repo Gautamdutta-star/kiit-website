@@ -26,7 +26,7 @@ if(isset($_POST['rollno'])){
     $cgpa   = $_POST['cgpa'];
 
     $sql = "INSERT INTO student_info
-    (Rollno, Name, Dept, Sem, Address, Mobile, Email, CGPA)
+    (roll_no, name, dept, sem, address, mobile, email, cGPA)
     VALUES (?,?,?,?,?,?,?,?)";
 
     $stmt = $conn->prepare($sql);
