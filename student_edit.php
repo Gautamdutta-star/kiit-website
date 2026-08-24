@@ -1,15 +1,10 @@
 <?php
 
 $url = getenv('MYSQL_URL');
-
-if (!$url) {
-    die("MYSQL_URL is not set");
-}
-
 $db = parse_url($url);
 
 $host = $db['host'];
-$user = urldecode($db['user']);
+$user = 'root';
 $password = urldecode($db['pass']);
 $database = ltrim($db['path'], '/');
 $port = $db['port'] ?? 3306;
