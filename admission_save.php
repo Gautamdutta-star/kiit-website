@@ -1,4 +1,5 @@
 <?php
+
 $url = getenv('MYSQL_URL');
 $db = parse_url($url);
 
@@ -9,7 +10,8 @@ $database = ltrim($db['path'], '/');
 $port = $db['port'] ?? 3306;
 
 $conn = new mysqli($host, $user, $password, $database, $port);
-if($conn->connect_error){
+
+if ($conn->connect_error) {
     die("DB Error: " . $conn->connect_error);
 }
 if(isset($_POST['fullname'])){
