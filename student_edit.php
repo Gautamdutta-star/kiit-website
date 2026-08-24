@@ -1,4 +1,9 @@
 <?php
+echo "HOST: " . (getenv('MYSQLHOST') ?: 'EMPTY') . "<br>";
+echo "USER: " . (getenv('MYSQLUSER') ?: 'EMPTY') . "<br>";
+echo "DB: " . (getenv('MYSQLDATABASE') ?: 'EMPTY') . "<br>";
+echo "PORT: " . (getenv('MYSQLPORT') ?: 'EMPTY') . "<br>";
+exit;
 $conn = new mysqli(
     getenv('MYSQLHOST'),
     getenv('MYSQLUSER'),
