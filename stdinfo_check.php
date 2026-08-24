@@ -4,8 +4,8 @@ $url = getenv('MYSQL_URL');
 $db = parse_url($url);
 
 $host = $db['host'];
-$user = urldecode($db['user']);
-$password = urldecode($db['pass']);
+$user = $db['user'] ?? 'root';
+$password = isset($db['pass']) ? urldecode($db['pass']) : '';
 $database = ltrim($db['path'], '/');
 $port = $db['port'] ?? 3306;
 
