@@ -1,12 +1,14 @@
 <?php
+$url = getenv('MYSQL_URL');
+$db = parse_url($url);
 
-$conn = new mysqli(
-    getenv('MYSQLHOST'),
-    getenv('MYSQLUSER'),
-    getenv('MYSQLPASSWORD'),
-    getenv('MYSQLDATABASE'),
-    (int) getenv("MYSQLPORT")
-);
+$host = $db['host'];
+$user = 'root';
+$password = urldecode($db['pass']);
+$database = ltrim($db['path'], '/');
+$port = $db['port'] ?? 3306;
+
+$conn = new mysqli($host, $user, $password, $database, $port);
 
 if($conn->connect_error){
     die("DB Error");
