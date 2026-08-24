@@ -17,13 +17,14 @@ $msg = "";
 
 if(isset($_POST['login'])){
 
-    $username = $_POST['username'];
-    $password = md5($_POST['password']);  // ✅ same as DB stored (MD5)
+    $username = trim($_POST['username']);
+$password = md5($_POST['password']);
 
-    $stmt = $conn->prepare("SELECT * FROM admin_users WHERE username=? AND password=?");
-    if(!$stmt) die("Prepare Failed: " . $conn->error);
+$stmt = $conn->prepare(
+    "SELECT * FROM admin_users WHERE username = ? AND password = ?"
+);
 
-    $stmt->bind_param("ss", $username, $password);
+$stmt->bind_param("ss", $username, $password);
     $stmt->execute();
     $res = $stmt->get_result();
 
